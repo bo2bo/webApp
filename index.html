@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"  media="screen"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="email=no,telephone=no"/>
+    <meta name="x5-orientation" content="portrait">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <title>智享微服务</title>
+    <!-- 公用css -->
+    <link rel="stylesheet" href="./wx/css/common/reset.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/Swiper/4.3.0/css/swiper.min.css">
+    <link rel="stylesheet" href="//img.ciicbj.com/wx/css/master/master_home-eff9942d00.css">
+    <style>
+        #acton img {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<!-- container st -->
+<div class="container">
+    <!-- main st -->
+    <div class="main" id="main">
+        <div class="scroller">
+            <!-- banner st -->
+            <div class="banner swiper-container">
+                <ul class="swiper-wrapper" id="homebanners">
+
+                </ul>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- banner end -->
+            <!-- nav st -->
+            <nav class="nav">
+
+            </nav>
+            <!-- nav end -->
+            <!-- acnews st -->
+            <div class="acnew">
+                <p>最新消息</p>
+                <!-- 消息列表 -->
+                <ol class="newshow swiper-container">
+                    <ul class="swiper-wrapper" id="homemes">
+
+                    </ul>
+                </ol>
+            </div>
+            <!-- acnews end -->
+            <!-- newactive st -->
+            <div class="newactive clearfloat">
+                <h5>－最新活动－ <a href="activity/activity.html">更多<em class="icon icon-conjtt"></em></a></h5>
+                <div class="content" id="acton">
+                    <div class="bottomImg">
+                        <div class="leftimg">
+
+                        </div>
+                        <div class="leftimgs">
+
+                        </div>
+                        <div class="rightimg">
+                            <p></p>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="newspecial newactive clearfloat">
+                <h5>－特别推荐－</h5>
+                <div class="content" id="special">
+                    <p></p>
+                </div>
+            </div>
+            <!-- newactive end -->
+            <!-- recommend st -->
+            <div class="recommend clearfloat">
+                <h5>－福利推荐－</h5>
+                <div class="content luns swiper-container">
+                    <div class="swiper-wrapper" id="welss">
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- recommend end -->
+        </div>
+    </div>
+    <!-- main end -->
+    <!-- footer st   -->
+    <footer class="footer">
+        <a href="javascript:;" class="activehome">
+            <em class="icon icon-conho1"></em><span>首页</span>
+        </a>
+        <a href="./serve.html">
+            <em class="icon icon-conse"></em><span>服务</span>
+        </a>
+        <a href="./news.html">
+            <em class="icon icon-conne"></em><span>资讯</span>
+        </a>
+        <a href="./activity.html">
+            <em class="icon icon-conac"></em><span>活动</span>
+        </a>
+        <a href="./me.html">
+            <em class="icon icon-conme"></em><span>我的</span>
+        </a>
+
+    </footer>
+    <!-- footer end -->
+</div>
+<!-- container end -->
+
+<!--移动端适配-->
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="./wx/js/common/sizerem.js"></script>
+<!-- <script type="text/javascript" src="//img.ciicbj.com/wx/js/conmon/sea-68b90934d7.js"></script>
+<script type="text/javascript" src="//img.ciicbj.com/wx/js/conmon/swiper-fb13ef3e87.min.js"></script>
+<script type="text/javascript" src="//img.ciicbj.com/wx/js/conmon/alerts-ef0ffb8e18.js"></script>
+<script type="text/javascript" src="//img.ciicbj.com/wx/js/conmon/checkstatus-b2e12e6664.js"></script>
+<script type="text/javascript" src="//img.ciicbj.com/wx/js/conmon/iscroll-5bff6690e5.min.js"></script>
+<script type="text/javascript" src="//img.ciicbj.com/wx/js/master/master_home-25c6a94ac6.js"></script> -->
+<script type="text/javascript">
+    //获取openId
+    var url = location.href;
+    if (url.indexOf("?") != -1 && url.indexOf('openId') !=-1 ) {
+        var endnum = url.indexOf("&");
+        url = url.substring(url.indexOf("=") + 1, endnum);
+        sessionStorage.setItem('openId', url);
+    }
+</script>
+</body>
+</html>
