@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" media="screen" />
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -16,30 +15,30 @@
     <!-- 公用css -->
     <link rel="stylesheet" href="./wx/css/common/reset.css">
     <link rel="stylesheet" href="./wx/css/common/base.css">
-    <link rel="stylesheet" href="./wx/css/master/index.css">
+    <link rel="stylesheet" href="./wx/css/master/data.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="main" id="main">
+        <div class="main">
             <div class="scroller">
 
             </div>
         </div>
-        <footer class="footer">
-            <a href="javascript:;" class="activehome">
-                <em class="icon icon-conho1"></em>
+        <footer class="footer" style="border-top: .01rem solid #cccccc;">
+            <a href="index.html">
+                <em class="icon icon-conho"></em>
                 <span>全景</span>
             </a>
-            <a href="./study.html">
+            <a href="study.html">
                 <em class="icon icon-conse"></em>
                 <span>研判</span>
             </a>
-            <a href="./data.html">
-                <em class="icon icon-conac"></em>
+            <a href="javascript:;" class="activehome">
+                <em class="icon icon-conac1"></em>
                 <span>数据</span>
             </a>
-            <a href="./me.html">
+            <a href="me.html">
                 <em class="icon icon-conme"></em>
                 <span>我的</span>
             </a>
@@ -48,16 +47,7 @@
     <!--移动端适配-->
     <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="./wx/js/common/sizerem.js"></script>
-    <script type="text/javascript" src="./wx/js/master/index.js"></script>
-    <script type="text/javascript">
-        //获取openId
-        var url = location.href;
-        if (url.indexOf("?") != -1 && url.indexOf('openId') != -1) {
-            var endnum = url.indexOf("&");
-            url = url.substring(url.indexOf("=") + 1, endnum);
-            sessionStorage.setItem('openId', url);
-        }
-    </script>
+    <script type="text/javascript" src="./wx/js/master/data.js"></script>
 </body>
 
 </html>

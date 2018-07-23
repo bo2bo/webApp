@@ -1,0 +1,75 @@
+@charset "UTF-8";
+.container,
+body,
+html {
+    width: 100%;
+    height: 100%
+}
+
+body,
+html {
+    font-size: .14rem;
+    overflow: hidden;
+    background: #f1f1f1
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden
+}
+
+.container .main {
+    width: 100%;
+    flex: 1;
+    overflow-x: hidden
+}
+
+.container .main .scroller {
+    width: 100%;
+    height: auto;
+    position: relative
+}
+
+.container .footer {
+    border-top: solid #ccc .012rem;
+    height: 1rem;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between
+}
+
+.container .footer a {
+    flex: 1;
+    height: 100%
+}
+
+.container .footer a em {
+    text-align: center;
+    display: block;
+    width: .45rem;
+    height: .45rem;
+    margin: .13rem auto 0;
+    line-height: .4rem;
+    color: #000
+}
+
+.container .footer a span {
+    display: block;
+    width: 100%;
+    height: .24rem;
+    margin-top: .07rem;
+    font-size: .24rem;
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height: .24rem
+}
+
+.container .footer .activehome em,
+.container .footer .activehome span {
+    color: #32b9f9
+}
